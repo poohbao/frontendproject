@@ -1,0 +1,32 @@
+/* introduce.module.css */
+
+.header {
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 54px;
+  }
+.container {
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.imageBox {
+    width: 45%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.text {
+    width: 45%;
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}

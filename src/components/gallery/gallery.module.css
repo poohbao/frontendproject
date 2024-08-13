@@ -1,0 +1,53 @@
+/* 기존 CSS */
+.header {
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 54px;
+}
+
+.part_wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px; /* 가로 간격 설정 */
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* gallery.module.css */
+.part_wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px; /* 가로 간격 설정 */
+}
+
+.item {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.item img {
+  width: 200px;
+  height: 100%; /* 이미지 비율 유지를 위해 auto 사용 */
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+.text {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  background-color: black;
+}

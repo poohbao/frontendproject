@@ -1,0 +1,84 @@
+/* src/App.css */
+.tableposition {
+  margin-top: 30px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 54px;
+}
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-right: 10px;
+}
+
+button {
+  margin-right: 5px;
+}
+
+table {
+  width: 100%; /* 테이블의 전체 너비를 100%로 유지합니다 */
+  border-collapse: collapse;
+  table-layout: fixed; /* 테이블 레이아웃을 고정하여 열의 너비를 조정합니다 */
+}
+
+th, td {
+  padding: 10px; /* 셀의 패딩을 유지합니다 */
+  border: 1px solid #ddd;
+  word-wrap: break-word; /* 긴 단어가 줄 바꿈되도록 합니다 */
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* 특정 열의 너비 조정 */
+td:first-child, th:first-child {
+  width: 70px; /* 번호 열의 너비를 줄입니다 */
+  text-align: center; /* 번호 열의 내용 중앙 정렬 */
+}
+
+/* 체크박스 CSS */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+/* 페이징 버튼 */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
